@@ -1,0 +1,36 @@
+<program> -> <beginsym> <stmtlist> <endsym>
+<stmtlist> -> <statement> <statementtail>
+<statementtail> -> <stmt list>
+<statementtail> -> 
+<statement> -> <ident> <assignop> <expression> <semicolon>
+<statement> -> <readsym> <lparen> <idlist> <rparen> <semicolon>
+<statement> -> <writesym> <lparen> <exprlist> <rparen> <semicolon>
+<idlist> -> <ident> <idtail>
+<idtail> -> <comma> <ident> <idtail>
+<idtail> -> 
+<exprlist> -> <expression> <expressiontail>
+<expression tail> -> <comma> <exprlist>
+<expression tail> -> 
+<expression> -> <primary> <primarytail>
+<primary tail> -> <addop> <expression>
+<primary tail>  -> 
+<primary> -> <lparen> <expression> <rparen>
+<primary> -> <ident>
+<primary> -> <intliteral>
+<addop> -> <plusop>
+<addop> -> <minusop>
+<systemgoal> -> <program> <eofsym>
+<beginsym> -> BeginSym
+<endsym> -> EndSym
+<ident> -> Id
+<assign op> -> AssignOp
+<semicolon> -> SemiColon
+<readsym> -> ReadSym
+<writesym> -> WriteSym
+<lparen> -> LParen
+<rparen> -> RParen
+<comma> -> Comma
+<intliteral> -> IntLiteral
+<plusop> -> PlusOp
+<minusop> -> MinusOp
+<eofsym> -> EOfSym
