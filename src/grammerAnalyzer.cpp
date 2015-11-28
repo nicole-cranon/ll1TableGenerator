@@ -1,7 +1,7 @@
 /*
 	nicole cranon <nicole.cranon@ucdenver.edu>
 	csci 4640, fall 2015
-	assignment 5 - grammer analyzer
+	assignment 7 - ll1 table generator
  */
 
 #include "grammerAnalyzer.h"
@@ -39,7 +39,7 @@ namespace ga {
 						terminals.insert (RHS);
 						symbols.insert (RHS);
 					}
-					// nonterminals.insert (LHS);
+					nonterminals.insert (LHS);
 				} else {
 					nonterminals.insert (LHS);
 					symbols.insert (LHS);

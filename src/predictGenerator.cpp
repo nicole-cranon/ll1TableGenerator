@@ -1,7 +1,7 @@
 /*
 	nicole cranon <nicole.cranon@ucdenver.edu>
 	csci 4640, fall 2015
-	assignment 6 - predict generator
+	assignment 7 - ll1 table generator
  */
 
 #include "predictGenerator.h"
@@ -53,19 +53,6 @@ namespace predict {
 			// }
 
 		return RHS_stringList;
-	}
-
-	// remove white space in string s
-	std::string normalize (const std::string& s) {
-		std::string temp = "";
-
-		for (unsigned i = 0; i < s.size(); ++i) {
-			if (s[i] != ' ') {
-				temp += s[i];
-			}
-		}
-
-		return temp;
 	}
 
 	void markLambda (const std::vector<std::string>& lhsList, 

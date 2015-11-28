@@ -1,7 +1,7 @@
 /*
 	nicole cranon <nicole.cranon@ucdenver.edu>
 	csci 4640, fall 2015
-	assignment 5 - grammer analyzer
+	assignment 7 - ll1 table generator
  */
 
 #ifndef _GRAMMER_ANALYZER
